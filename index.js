@@ -8,8 +8,8 @@ console.log("testting test")
     app.post("/getSampleData",async (req, res) => {
         try{
             console.log("getSampleData inner ")
-            // let resultData=await axios.get("https://jsonplaceholder.typicode.com/posts")
-            // console.log("getSampleData resultData",resultData.data)
+            let resultData=await axios.get("https://jsonplaceholder.typicode.com/posts")
+            console.log("getSampleData resultData",resultData.data)
             console.log("getSampleData", req.body)
             res.send([
                 {
